@@ -1,0 +1,42 @@
+.main {
+    padding: 0 16px;
+}
+
+.cta {
+    &__section {
+        max-width: 700px;
+        margin: 0 auto;
+        margin-bottom: 74px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 24px;
+        background-image: url(./../assets/images/image-web-3-mobile.jpg);
+    }
+
+    &__link,
+    &__link:link,
+    &__link:visited {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 4.375px;
+        color: #fffdfa;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        padding: 15px 32px;
+        background-color: #f15d51;
+    }
+}
+
+.news {
+    &__section {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 24px 20px;
+        background-color: hsl(240, 100%, 5%);
+    }
+}
