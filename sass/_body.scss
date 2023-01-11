@@ -1,5 +1,18 @@
 .main {
     padding: 0 16px;
+
+    @media only screen and (min-width: 1150px) {
+        max-width: 1110px;
+        margin: 0 auto;
+        margin-bottom: 129px;
+        padding: 0;
+
+        display: grid;
+        grid-template-rows: 511px 129px;
+        grid-template-columns: 730px 350px;
+        column-gap: 30px;
+        row-gap: 71px;
+    }
 }
 
 .cta {
@@ -7,6 +20,13 @@
         max-width: 700px;
         margin: 0 auto;
         margin-bottom: 74px;
+
+        @media only screen and (min-width: 1150px) {
+            margin-bottom: 0;
+            max-width: 100%;
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
     }
 
     &__img {
@@ -16,6 +36,22 @@
         background-image: url(./../assets/images/image-web-3-mobile.jpg);
         background-position: center;
         background-size: cover;
+
+        @media only screen and (min-width: 1150px) {
+            background-image: url(./../assets/images/image-web-3-desktop.jpg);
+            margin-bottom: 28px;
+        }
+    }
+
+    &__text-box {
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows: 183px;
+        column-gap: 30px;
+        align-items: center;
+    }
+
+    &__text-box div {
     }
 
     &__h1 {
@@ -24,17 +60,21 @@
         line-height: 40px;
         color: #00001a;
         margin-bottom: 16px;
-    }
 
-    &__text-box {
-    }
-
-    &__text-box div {
+        @media only screen and (min-width: 1150px) {
+            font-size: 56px;
+            line-height: 56px;
+            margin-bottom: 0;
+        }
     }
 
     &__p {
         color: #5e607a;
         margin-bottom: 24px;
+
+        @media only screen and (min-width: 1150px) {
+            margin-bottom: 29px;
+        }
     }
 
     &__link,
@@ -60,6 +100,8 @@
     }
 }
 
+//
+
 .news {
     &__section {
         max-width: 700px;
@@ -67,6 +109,14 @@
         margin-bottom: 64px;
         padding: 24px 20px;
         background-color: hsl(240, 100%, 5%);
+
+        @media only screen and (min-width: 1150px) {
+            max-width: 350px;
+            padding: 32px 24px 32px 24px;
+            margin-bottom: 0;
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
     }
 
     &__h2 {
@@ -75,6 +125,12 @@
         line-height: 32px;
         color: #e9aa52;
         margin-bottom: 35px;
+
+        @media only screen and (min-width: 1150px) {
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: 34px;
+        }
     }
 
     &__new {

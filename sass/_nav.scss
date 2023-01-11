@@ -3,14 +3,23 @@
     align-items: center;
     justify-content: space-between;
     padding: 28px 16px 32px 16px;
-    // max-width: 1110px;
     max-width: 700px;
     margin: 0 auto;
+
+    @media only screen and (min-width: 1150px) {
+        max-width: 1110px;
+        padding: 89px 16px 55px 16px;
+    }
 
     &__logo {
         width: 45px;
         height: 28px;
         cursor: pointer;
+
+        @media only screen and (min-width: 1150px) {
+            width: revert;
+            height: revert;
+        }
     }
 
     &__nav {
@@ -27,9 +36,23 @@
         pointer-events: none;
         visibility: hidden;
 
+        @media only screen and (min-width: 1150px) {
+            opacity: revert;
+            pointer-events: revert;
+            visibility: revert;
+            background-color: revert;
+            position: revert;
+            width: revert;
+            height: revert;
+        }
+
         &__open {
             padding: 7.5px 0;
             cursor: pointer;
+
+            @media only screen and (min-width: 1150px) {
+                display: none;
+            }
         }
 
         &__close {
@@ -40,6 +63,10 @@
 
             cursor: pointer;
             opacity: 0;
+
+            @media only screen and (min-width: 1150px) {
+                display: none;
+            }
         }
 
         ul {
@@ -58,11 +85,25 @@
             transition: right 0.2s;
 
             right: -256px;
+
+            @media only screen and (min-width: 1150px) {
+                position: revert;
+                padding: revert;
+                width: revert;
+                height: revert;
+
+                display: flex;
+                gap: 40px;
+            }
         }
 
         li {
             &:not(:last-child) {
                 margin-bottom: 24px;
+
+                @media only screen and (min-width: 1150px) {
+                    margin-bottom: 0;
+                }
             }
         }
 
@@ -71,6 +112,18 @@
             font-size: 18px;
             line-height: 24px;
             color: #00001a;
+            transition: color 0.15s;
+            display: block;
+
+            &:hover {
+                color: #f15d51;
+            }
+
+            @media only screen and (min-width: 1150px) {
+                font-size: 15px;
+                line-height: 26px;
+                color: #5e607a;
+            }
         }
     }
 }
