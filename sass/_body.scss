@@ -1,0 +1,108 @@
+.main {
+    padding: 0 16px;
+}
+
+.cta {
+    &__section {
+        max-width: 700px;
+        margin: 0 auto;
+        margin-bottom: 74px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 24px;
+        background-image: url(./../assets/images/image-web-3-mobile.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__h1 {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 40px;
+        color: #00001a;
+        margin-bottom: 16px;
+    }
+
+    &__text-box {
+    }
+
+    &__text-box div {
+    }
+
+    &__p {
+        color: #5e607a;
+        margin-bottom: 24px;
+    }
+
+    &__link,
+    &__link:link,
+    &__link:visited {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 4.375px;
+        color: #fffdfa;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        padding: 15px 32px;
+        background-color: #f15d51;
+
+        transition: background-color 0.2s, color 0.2s;
+
+        &:hover {
+            color: #fff;
+            background-color: hsl(240, 100%, 5%);
+        }
+    }
+}
+
+.news {
+    &__section {
+        max-width: 700px;
+        margin: 0 auto;
+        margin-bottom: 64px;
+        padding: 24px 20px;
+        background-color: hsl(240, 100%, 5%);
+    }
+
+    &__h2 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        color: #e9aa52;
+        margin-bottom: 35px;
+    }
+
+    &__new {
+        margin-top: 31px;
+
+        &:not(:last-child) {
+            padding-bottom: 29px;
+            border-bottom: 1px solid #5e607a;
+        }
+    }
+
+    &__title,
+    &__title:link,
+    &__title:visited {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        color: #fffdfa;
+        text-decoration: none;
+        margin-bottom: 8px;
+        transition: color 0.2s;
+
+        &:hover {
+            color: #e9aa52;
+        }
+    }
+
+    &__p {
+        color: #c5c6ce;
+    }
+}
