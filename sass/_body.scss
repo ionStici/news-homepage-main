@@ -78,12 +78,17 @@
     }
 
     &__new {
+        cursor: pointer;
         margin-top: 31px;
 
         &:not(:last-child) {
             padding-bottom: 29px;
             border-bottom: 1px solid #5e607a;
         }
+    }
+
+    &__new:hover &__title {
+        color: #e9aa52;
     }
 
     &__title,
@@ -96,10 +101,6 @@
         text-decoration: none;
         margin-bottom: 8px;
         transition: color 0.2s;
-
-        &:hover {
-            color: #e9aa52;
-        }
     }
 
     &__p {
