@@ -181,12 +181,14 @@ body {
     margin-bottom: 28px;
   }
 }
-.cta__text-box {
-  display: grid;
-  grid-template-columns: repeat(2, 350px);
-  grid-template-rows: 183px;
-  column-gap: 30px;
-  align-items: center;
+@media only screen and (min-width: 1150px) {
+  .cta__text-box {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: 183px;
+    column-gap: 30px;
+    align-items: center;
+  }
 }
 .cta__h1 {
   font-weight: 800;

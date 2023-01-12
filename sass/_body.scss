@@ -44,11 +44,13 @@
     }
 
     &__text-box {
-        display: grid;
-        grid-template-columns: repeat(2, 350px);
-        grid-template-rows: 183px;
-        column-gap: 30px;
-        align-items: center;
+        @media only screen and (min-width: 1150px) {
+            display: grid;
+            grid-template-columns: repeat(2, 350px);
+            grid-template-rows: 183px;
+            column-gap: 30px;
+            align-items: center;
+        }
     }
 
     &__text-box div {
